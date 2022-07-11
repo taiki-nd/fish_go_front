@@ -4,7 +4,7 @@ export const Footer = () => {
       <footer className="blog-footer">
         <p>footer area</p>
         <p>
-          <a href="#">Back to top</a>
+          <a href="/">Back to top</a>
         </p>
       </footer>
     </>
