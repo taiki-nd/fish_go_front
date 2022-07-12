@@ -3,8 +3,8 @@ import './App.css';
 import { Header } from './components/parts/Header';
 import { Menu } from './components/parts/Menu'
 import { Footer } from './components/parts/Footer';
-import { Posts } from './components/pages/Posts';
-import { Form } from './components/pages/Form';
+import { Posts } from './components/pages/posts/Posts';
+import { Form } from './components/pages/form/Form';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
