@@ -4,7 +4,7 @@ export class Post {
     public name = '',
     public content = '',
     public filename = '',
-    public image_url=  '',
-    public price = 0,
+    public image_url = '',
+    public updated_at = '',
   ){}
 }
