@@ -30,10 +30,9 @@ export const Posts = () => {
         {posts.map((p: Post) => {
           return(
             <div className="col-md-6" key={p.id}>
-              <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style={{backgroundImage: `url(${p.image_url})`}}>
+              <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative index-image" style={{backgroundImage: `url(${p.image_url})`}}>
                 <div className="col p-4 d-flex flex-column position-static">
-                  <strong className="d-inline-block mb-2 text-primary">{p.name}</strong>
-                  <h3 className="mb-0">Featured post</h3>
+                  <h3 className="mb-0">{p.name}</h3>
                   <div className="mb-1 text-muted">{p.updated_at.slice(0, 10)}</div>
                   <p className="card-text mb-auto">{p.content.substring(0, 30) + " ..."}</p>
                   <a href="#" className="stretched-link">Continue reading</a>
