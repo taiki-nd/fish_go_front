@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Post } from "../../../model/Post";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -35,7 +36,7 @@ export const Posts = () => {
                   <h3 className="mb-0">{p.name}</h3>
                   <div className="mb-1 text-muted">{p.updated_at.slice(0, 10)}</div>
                   <p className="card-text mb-auto">{p.content.substring(0, 30) + " ..."}</p>
-                  <a href="#" className="stretched-link">Continue reading</a>
+                  <Link to={`/posts/${p.id}`} className="stretched-link">Continue reading</Link>
                 </div>
                 <div className="col-auto d-none d-lg-block">
                   <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
